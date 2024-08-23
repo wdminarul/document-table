@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Management Table</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <style>
+            .content {
+                background-color: #fff;
+                width: 100%;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .table-main {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                border: 2px solid #7af7b2;
+                border-radius: 20px;
+                margin: 20px auto;
+                width: 90%;
+                box-shadow: 0px 0px 10px #aaa;
+                text-align: center;
+            }
+
+            .table-main th {
+                color: #fff;
+                text-transform: uppercase;
+            }
+
+            .table-main td,
+            th {
+                border: none;
+                text-align: left;
+                padding: 10px;
+            }
+
+            .table-main tr:nth-child(odd) {
+                background-color: #7af7b2;
+            }
+
+            .preview a {
+                text-decoration: none;
+                color: #50b278;
+            }
+
+            .preview {
+                background-color: #8df6a7;
+                padding: 10px 20px;
+                border-radius: 5px;
+                margin: 0px 5px;
+                box-shadow: 0px 0px 10px #aaa;
+                border: none;
+            }
+
+            .share a {
+                text-decoration: none;
+                color: #000;
+            }
+
+            .share {
+                background-color: #74d9fb;
+                padding: 10px 20px;
+                border-radius: 5px;
+                margin: 0px 5px;
+                box-shadow: 0px 0px 10px #aaa;
+                border: none;
+            }
+
+            .download a {
+                text-decoration: none;
+                color: #bd4b64;
+            }
+
+            .download {
+                background-color: #ec9aac;
+                padding: 10px 20px;
+                border-radius: 5px;
+                margin: 0px 5px;
+                box-shadow: 0px 0px 10px #aaa;
+                border: none;
+            }
+
+            .table-main button:hover a {
+                color: #fff;
+            }
+
+            .document-name {
+                width: 40%;
+            }
+
+            .type {
+                width: 20%;
+            }
+
+            .action {
+                width: 40%;
+
+            }
+            @media only screen and (max-width:1000px) and (min-width:600px) {
+                
+                .preview {
+                    margin: 5px 5px;
+                    padding: 5px 10px;
+                }
+
+                .share {
+                    margin: 5px 5px;
+                    padding: 5px 10px;
+                }
+
+                .download {
+                    margin: 5px 5px;
+                    padding: 5px 10px;
+                }
+            }
+
+            @media only screen and (max-width:662px) and (min-width:320px) {
+                .table-main td,
+            th {
+                border: none;
+                text-align: left;
+                padding: 5px;
+            }
+                .table-main {
+                    margin: 20px auto;
+                    width: 96%;
+                    box-shadow: 0px 0px 10px #aaa;
+                    text-align: center;
+                    font-size: 12px;
+                }
+
+                .preview {
+                    margin: 5px 0px;
+                    width: 80%;
+                }
+
+                .share {
+                    margin: 5px 0px;
+                    width: 80%;
+                }
+
+                .download {
+                    margin: 5px 0px;
+                    width: 80%;
+                }
+            }
+
+           
+        </style>
+    </head>
+
+    <body class="main-content">
+
+        <div class="content">
+            <table class="table-main">
+                <tr>
+                    <th class="document-name">Document Name</th>
+                    <th class="type">Type</th>
+                    <th class="action">Action</th>
+                </tr>
+                <tr>
+                    <td>Office File</td>
+                    <td>DOCS</td>
+                    <td>
+                        <button class="preview"><a href="">Preview</a></button>
+                        <button class="share"><a href="">Share</a></button>
+                        <button class="download"><a href="">Download</a></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>PNG</td>
+                    <td>
+                        <button class="preview"><a href="">Preview</a></button>
+                        <button class="share"><a href="">Share</a></button>
+                        <button class="download"><a href="">Download</a></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ernst Handel</td>
+                    <td>PDF</td>
+                    <td>
+                        <button class="preview"><a href="">Preview</a></button>
+                        <button class="share"><a href="">Share</a></button>
+                        <button class="download"><a href="">Download</a></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Island Trading</td>
+                    <td>DOCS</td>
+                    <td>
+                        <button class="preview"><a href="">Preview</a></button>
+                        <button class="share"><a href="">Share</a></button>
+                        <button class="download"><a href="">Download</a></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Laughing Bacchus Winecellars</td>
+                    <td>MP3</td>
+                    <td>
+                        <button class="preview"><a href="">Preview</a></button>
+                        <button class="share"><a href="">Share</a></button>
+                        <button class="download"><a href="">Download</a></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Magazzini Alimentari Riuniti</td>
+                    <td>PDF</td>
+                    <td>
+                        <button class="preview"><a href="">Preview</a></button>
+                        <button class="share"><a href="">Share</a></button>
+                        <button class="download"><a href="">Download</a></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </body>
+
+    </html>
+
+
+</body>
+
+</html>
